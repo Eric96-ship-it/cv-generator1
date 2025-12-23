@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/cv.html"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "builds": [
+    {
+      "src": "public/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "outputDirectory": "public"
+}
